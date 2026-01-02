@@ -123,7 +123,7 @@ These changes might require special care when updating.
 
 * :class:`Bottle` instances are now context managers. If used in a with-statement, the default application changes to the specific instance and the shortcuts for many instance methods can be used.
 * Added support for ``PATCH`` requests and the :meth:`Bottle.patch` decorator.
-* Added `aiohttp <http://aiohttp.readthedocs.io/en/stable/>`_ and `uvloop <https://github.com/MagicStack/uvloop>`_ server adapters.
+* Added `aiohttp <https://aiohttp.readthedocs.io/en/stable/>`_ and `uvloop <https://github.com/MagicStack/uvloop>`_ server adapters.
 * Added command-line arguments for config from json or ini files.
 * :meth:`Bottle.mount` now recognizes instances of :class:`Bottle` and mounts them with significantly less overhead than other WSGI applications.
 * The :attr:`Request.json <BaseRequest.json>` property now accepts ``application/json-rpc`` requests.
@@ -145,7 +145,7 @@ Release 0.12
 * Removed the ``Request.MAX_PARAMS`` limit. The hash collision bug in CPythons dict() implementation was fixed over a year ago. If you are still using Python 2.5 in production, consider upgrading or at least make sure that you get security fixed from your distributor.
 * New :class:`ConfigDict` API (see :doc:`configuration`)
 
-More information can be found in this `development blog post <http://blog.bottlepy.org/2013/07/19/preview-bottle-012.html>`_.
+More information can be found in this `development blog post <https://blog.bottlepy.org/2013/07/19/preview-bottle-012.html>`_.
 
 
 Release 0.11
@@ -154,7 +154,7 @@ Release 0.11
 * Native support for Python 2.x and 3.x syntax. No need to run 2to3 anymore.
 * Support for partial downloads (``Range`` header) in :func:`static_file`.
 * The new :class:`ResourceManager` interface helps locating files bundled with an application.
-* Added a server adapter for `waitress <http://docs.pylonsproject.org/projects/waitress/en/latest/>`_.
+* Added a server adapter for `waitress <https://docs.pylonsproject.org/projects/waitress/en/latest/>`_.
 * New :meth:`Bottle.merge` method to install all routes from one application into another.
 * New :attr:`Request.app <BaseRequest.app>` property to get the application object that handles a request.
 * Added :meth:`FormsDict.decode()` to get an all-unicode version (needed by WTForms).
@@ -212,7 +212,7 @@ Release 0.9
 
 * A brand new plugin-API. See :doc:`plugins/index` and :doc:`plugins/dev` for details.
 * The :func:`route` decorator got a lot of new features. See :meth:`Bottle.route` for details.
-* New server adapters for `gevent <http://www.gevent.org/>`_, `meinheld <http://meinheld.org/>`_ and `bjoern <https://github.com/jonashaag/bjoern>`_.
+* New server adapters for `gevent <https://www.gevent.org/>`_, `meinheld <https://meinheld.org/>`_ and `bjoern <https://github.com/jonashaag/bjoern>`_.
 * Support for SimpleTAL templates.
 * Better runtime exception handling for mako templates in debug mode.
 * Lots of documentation, fixes and small improvements.

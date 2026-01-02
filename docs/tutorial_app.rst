@@ -1,15 +1,15 @@
-.. _Bottle: http://bottlepy.org
+.. _Bottle: https://bottlepy.org
 .. _WSGI: https://peps.python.org/pep-3333/
-.. _Python: http://www.python.org
-.. _SQLite: http://www.sqlite.org
+.. _Python: https://www.python.org
+.. _SQLite: https://www.sqlite.org
 .. _`SQLite module`: https://docs.python.org/3/library/sqlite3.html#module-sqlite3
 .. _`HTML tutorial`: https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content
 .. _venv: https://docs.python.org/3/library/venv.html
-.. _`decorator function`: http://docs.python.org/glossary.html#term-decorator
-.. _`Python DB API`: http://www.python.org/dev/peps/pep-0249/
-.. _`WSGI reference Server`: http://docs.python.org/library/wsgiref.html#module-wsgiref.simple_server
-.. _`Bottle documentation`: http://bottlepy.org/docs/dev/tutorial.html
-.. _JSON: http://www.json.org
+.. _`decorator function`: https://docs.python.org/glossary.html#term-decorator
+.. _`Python DB API`: https://www.python.org/dev/peps/pep-0249/
+.. _`WSGI reference Server`: https://docs.python.org/library/wsgiref.html#module-wsgiref.simple_server
+.. _`Bottle documentation`: https://bottlepy.org/docs/dev/tutorial.html
+.. _JSON: https://www.json.org
 .. _`match statement`: https://peps.python.org/pep-0634/
 .. _f-strings: https://docs.python.org/3/library/string.html#format-string-syntax
 .. _`Bottle class`: https://bottlepy.org/docs/dev/api.html#the-bottle-class

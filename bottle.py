@@ -7,7 +7,7 @@ a built-in HTTP Server and adapters for many third party WSGI/HTTP-server and
 template engines - all in a single file and with no dependencies other than the
 Python Standard Library.
 
-Homepage and documentation: http://bottlepy.org/
+Homepage and documentation: https://bottlepy.org/
 
 Copyright (c) 2009-2025, Marcel Hellkamp.
 License: MIT (see LICENSE for details)
@@ -3618,7 +3618,7 @@ class GeventServer(ServerAdapter):
 
 
 class GunicornServer(ServerAdapter):
-    """ Untested. See http://gunicorn.org/configure.html for options. """
+    """ Untested. See https://gunicorn.org/configure.html for options. """
 
     def run(self, handler):
         from gunicorn.app.base import BaseApplication

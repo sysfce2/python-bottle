@@ -1,12 +1,12 @@
 Asynchronous Applications
 =========================
 
-Asynchronous design patterns don't mix well with the synchronous nature of `WSGI <http://www.python.org/dev/peps/pep-3333/>`_. This is why most asynchronous frameworks (tornado, twisted, ...) implement a specialized API to expose their asynchronous features. Bottle is a WSGI framework and shares the synchronous nature of WSGI, but thanks to the awesome `gevent project <http://www.gevent.org/>`_, it is still possible to write asynchronous applications with bottle. This article documents the usage of Bottle with Asynchronous WSGI.
+Asynchronous design patterns don't mix well with the synchronous nature of `WSGI <https://www.python.org/dev/peps/pep-3333/>`_. This is why most asynchronous frameworks (tornado, twisted, ...) implement a specialized API to expose their asynchronous features. Bottle is a WSGI framework and shares the synchronous nature of WSGI, but thanks to the awesome `gevent project <https://www.gevent.org/>`_, it is still possible to write asynchronous applications with bottle. This article documents the usage of Bottle with Asynchronous WSGI.
 
 The Limits of Synchronous WSGI
 -------------------------------
 
-Briefly worded, the `WSGI specification (pep 3333) <http://www.python.org/dev/peps/pep-3333/>`_ defines a request/response circle as follows: The application callable is invoked once for each request and must return a body iterator. The server then iterates over the body and writes each chunk to the socket. As soon as the body iterator is exhausted, the client connection is closed.
+Briefly worded, the `WSGI specification (pep 3333) <https://www.python.org/dev/peps/pep-3333/>`_ defines a request/response circle as follows: The application callable is invoked once for each request and must return a body iterator. The server then iterates over the body and writes each chunk to the socket. As soon as the body iterator is exhausted, the client connection is closed.
 
 Simple enough, but there is a snag: All this happens synchronously. If your application needs to wait for data (IO, sockets, databases, ...), it must either yield empty strings (busy wait) or block the current thread. Both solutions occupy the handling thread and prevent it from answering new requests. There is consequently only one ongoing request per thread.
 
@@ -17,7 +17,7 @@ Greenlets to the rescue
 
 Most servers limit the size of their worker pools to a relatively low number of concurrent threads, due to the high overhead involved in switching between and creating new threads. While threads are cheap compared to processes (forks), they are still expensive to create for each new connection.
 
-The `gevent <http://www.gevent.org/>`_ module adds *greenlets* to the mix. Greenlets behave similar to traditional threads, but are very cheap to create. A gevent-based server can spawn thousands of greenlets (one for each connection) with almost no overhead. Blocking individual greenlets has no impact on the servers ability to accept new requests. The number of concurrent connections is virtually unlimited.
+The `gevent <https://www.gevent.org/>`_ module adds *greenlets* to the mix. Greenlets behave similar to traditional threads, but are very cheap to create. A gevent-based server can spawn thousands of greenlets (one for each connection) with almost no overhead. Blocking individual greenlets has no impact on the servers ability to accept new requests. The number of concurrent connections is virtually unlimited.
 
 This makes creating asynchronous applications incredibly easy, because they look and feel like synchronous applications. A gevent-based server is actually not asynchronous, but massively multi-threaded. Here is an example::
 
@@ -51,7 +51,7 @@ If you run this script and point your browser to ``http://localhost:8080/stream`
 Event Callbacks
 ---------------
 
-A very common design pattern in asynchronous frameworks (including tornado, twisted, node.js and friends) is to use non-blocking APIs and bind callbacks to asynchronous events. The socket object is kept open until it is closed explicitly to allow callbacks to write to the socket at a later point. Here is an example based on the `tornado library <http://www.tornadoweb.org/documentation#non-blocking-asynchronous-requests>`_::
+A very common design pattern in asynchronous frameworks (including tornado, twisted, node.js and friends) is to use non-blocking APIs and bind callbacks to asynchronous events. The socket object is kept open until it is closed explicitly to allow callbacks to write to the socket at a later point. Here is an example based on the `tornado library <https://www.tornadoweb.org/documentation#non-blocking-asynchronous-requests>`_::
 
     class MainHandler(tornado.web.RequestHandler):
         @tornado.web.asynchronous
@@ -64,7 +64,7 @@ The main benefit is that the request handler terminates early. The handling thre
 
 With Gevent+WSGI, things are different: First, terminating early has no benefit because we have an unlimited pool of (pseudo)threads to accept new connections. Second, we cannot terminate early because that would close the socket (as required by WSGI). Third, we must return an iterable to conform to WSGI.
 
-In order to conform to the WSGI standard, all we have to do is to return a body iterable that we can write to asynchronously. With the help of `gevent.queue <http://www.gevent.org/gevent.queue.html>`_, we can *simulate* a detached socket and rewrite the previous example as follows::
+In order to conform to the WSGI standard, all we have to do is to return a body iterable that we can write to asynchronously. With the help of `gevent.queue <https://www.gevent.org/gevent.queue.html>`_, we can *simulate* a detached socket and rewrite the previous example as follows::
 
     @route('/fetch')
     def fetch():
@@ -83,7 +83,7 @@ Finally: WebSockets
 
 Lets forget about the low-level details for a while and speak about WebSockets. Since you are reading this article, you probably know what WebSockets are: A bidirectional communication channel between a browser (client) and a web application (server).
 
-Thankfully the `gevent-websocket <http://pypi.python.org/pypi/gevent-websocket/>`_ package does all the hard work for us. Here is a simple WebSocket endpoint that receives messages and just sends them back to the client::
+Thankfully the `gevent-websocket <https://pypi.python.org/pypi/gevent-websocket/>`_ package does all the hard work for us. Here is a simple WebSocket endpoint that receives messages and just sends them back to the client::
 
     from bottle import request, Bottle, abort
     app = Bottle()

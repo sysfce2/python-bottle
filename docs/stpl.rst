@@ -51,7 +51,7 @@ You already learned the use of the ``{{...}}`` syntax from the "Hello World!" ex
   >>> template('Hello {{name.title() if name else "stranger"}}!', name='mArC')
   u'Hello Marc!'
 
-The contained python expression is executed at render-time and has access to all keyword arguments passed to the :meth:`SimpleTemplate.render` method. HTML special characters are escaped automatically to prevent `XSS <http://en.wikipedia.org/wiki/Cross-Site_Scripting>`_ attacks. You can start the expression with an exclamation mark to disable escaping for that expression::
+The contained python expression is executed at render-time and has access to all keyword arguments passed to the :meth:`SimpleTemplate.render` method. HTML special characters are escaped automatically to prevent `XSS <https://en.wikipedia.org/wiki/Cross-Site_Scripting>`_ attacks. You can start the expression with an exclamation mark to disable escaping for that expression::
 
   >>> template('Hello {{name}}!', name='<b>World</b>')
   u'Hello &lt;b&gt;World&lt;/b&gt;!'

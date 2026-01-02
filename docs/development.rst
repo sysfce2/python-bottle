@@ -20,13 +20,13 @@ The bottle `development repository <https://github.com/bottlepy/bottle>`_ and th
 
 * **git:** ``git clone git://github.com/bottlepy/bottle.git``
 * **git/https:** ``git clone https://github.com/bottlepy/bottle.git``
-* **Download:** Development branch as `tar archive <http://github.com/bottlepy/bottle/tarball/master>`_ or `zip file <http://github.com/bottlepy/bottle/zipball/master>`_.
+* **Download:** Development branch as `tar archive <https://github.com/bottlepy/bottle/tarball/master>`_ or `zip file <https://github.com/bottlepy/bottle/zipball/master>`_.
 
 
 Releases and Updates
 --------------------
 
-Bottle is released at irregular intervals and distributed through `PyPI <http://pypi.python.org/pypi/bottle>`_. Release candidates are only available from the git repository mentioned above. Debian and many other Linux distributions offer packages.
+Bottle is released at irregular intervals and distributed through `PyPI <https://pypi.python.org/pypi/bottle>`_. Release candidates are only available from the git repository mentioned above. Debian and many other Linux distributions offer packages.
 
 The Bottle version number splits into three parts (**major.minor.patch**) but does not follow the rules of `SemVer <https://semver.org/>`_. Instead, you can usually rely on the following rules:
 

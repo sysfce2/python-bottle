@@ -1,26 +1,26 @@
 .. highlight:: python
 .. currentmodule:: bottle
 
-.. _mako: http://www.makotemplates.org/
-.. _cheetah: http://www.cheetahtemplate.org/
+.. _mako: https://www.makotemplates.org/
+.. _cheetah: https://www.cheetahtemplate.org/
 .. _jinja2: https://jinja.palletsprojects.com/
 .. _paste: https://pythonpaste.readthedocs.io/
 .. _bjoern: https://github.com/jonashaag/bjoern
-.. _flup: http://trac.saddi.com/flup
+.. _flup: https://trac.saddi.com/flup
 .. _gunicorn: https://gunicorn.org/
 .. _cheroot: https://cheroot.cherrypy.dev/
 .. _WSGI: https://peps.python.org/pep-3333/
-.. _Python: http://python.org/
+.. _Python: https://python.org/
 .. _testing: https://github.com/bottlepy/bottle/raw/master/bottle.py
 .. _issue_tracker: https://github.com/bottlepy/bottle/issues
-.. _PyPI: http://pypi.python.org/pypi/bottle
+.. _PyPI: https://pypi.python.org/pypi/bottle
 .. _gae: https://developers.google.com/appengine/
 
 ============================
 Bottle: Python Web Framework
 ============================
 
-Bottle is a fast, simple and lightweight WSGI_ micro web-framework for Python_. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <http://docs.python.org/library/>`_.
+Bottle is a fast, simple and lightweight WSGI_ micro web-framework for Python_. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <https://docs.python.org/library/>`_.
 
 
 * **Routing:** Requests to function-call mapping with support for clean and dynamic URLs.

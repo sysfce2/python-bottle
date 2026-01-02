@@ -2,25 +2,25 @@
 .. currentmodule:: bottle
 
 .. _flup: https://pypi.org/project/flup/
-.. _gae: http://code.google.com/appengine/docs/python/overview.html
-.. _wsgiref: http://docs.python.org/library/wsgiref.html
+.. _gae: https://code.google.com/appengine/docs/python/overview.html
+.. _wsgiref: https://docs.python.org/library/wsgiref.html
 .. _cherrypy: https://cherrypy.dev/
 .. _paste: https://pythonpaste.readthedocs.io/
-.. _gunicorn: http://pypi.python.org/pypi/gunicorn
-.. _tornado: http://www.tornadoweb.org/
-.. _twisted: http://twistedmatrix.com/
-.. _diesel: http://dieselweb.org/
-.. _meinheld: http://pypi.python.org/pypi/meinheld
-.. _bjoern: http://pypi.python.org/pypi/bjoern
-.. _gevent: http://www.gevent.org/
-.. _eventlet: http://eventlet.net/
-.. _waitress: http://readthedocs.org/docs/waitress/en/latest/
-.. _apache: http://httpd.apache.org/
-.. _mod_wsgi: http://code.google.com/p/modwsgi/
-.. _pound: http://www.apsis.ch/pound
-.. _nginx: http://nginx.org/
-.. _lighttpd: http://www.lighttpd.net/
-.. _cherokee: http://cherokee-project.com/
+.. _gunicorn: https://pypi.python.org/pypi/gunicorn
+.. _tornado: https://www.tornadoweb.org/
+.. _twisted: https://twistedmatrix.com/
+.. _diesel: https://dieselweb.org/
+.. _meinheld: https://pypi.python.org/pypi/meinheld
+.. _bjoern: https://pypi.python.org/pypi/bjoern
+.. _gevent: https://www.gevent.org/
+.. _eventlet: https://eventlet.net/
+.. _waitress: https://readthedocs.org/docs/waitress/en/latest/
+.. _apache: https://httpd.apache.org/
+.. _mod_wsgi: https://code.google.com/p/modwsgi/
+.. _pound: https://www.apsis.ch/pound
+.. _nginx: https://nginx.org/
+.. _lighttpd: https://www.lighttpd.net/
+.. _cherokee: https://cherokee-project.com/
 .. _uWSGI: https://uwsgi-docs.readthedocs.io/en/latest/
 .. _cheroot: https://cheroot.cherrypy.dev/
 
@@ -41,7 +41,7 @@ To get your application available to the outside world, specify the IP the serve
 Scaling for Production
 ================================================================================
 
-The built-in development server is base on `wsgiref WSGIServer <http://docs.python.org/library/wsgiref.html#module-wsgiref.simple_server>`_, which is a very simple non-threading HTTP server implementation. This is perfectly fine for development, but may become a performance bottleneck when server load increases.
+The built-in development server is base on `wsgiref WSGIServer <https://docs.python.org/library/wsgiref.html#module-wsgiref.simple_server>`_, which is a very simple non-threading HTTP server implementation. This is perfectly fine for development, but may become a performance bottleneck when server load increases.
 
 The easiest way to increase performance is to install a multi-threaded server library like cheroot_ or gunicorn_ and tell Bottle to use that instead of the single-threaded wsgiref server::
 

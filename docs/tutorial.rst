@@ -6,7 +6,7 @@
 User's Guide
 ===============
 
-This guide introduces you to the concepts and features of the Bottle web framework and covers basic and advanced topics alike. You can read it from start to end, or use it as a reference later on. The automatically generated :doc:`api` may be interesting for you, too. It covers more details, but explains less than this tutorial. Solutions for the most common questions can be found in our :doc:`faq` collection or on the :doc:`faq` page. If you need any help, join our `mailing list <mailto:bottlepy@googlegroups.com>`_ or visit us in our `IRC channel <http://webchat.freenode.net/?channels=bottlepy>`_.
+This guide introduces you to the concepts and features of the Bottle web framework and covers basic and advanced topics alike. You can read it from start to end, or use it as a reference later on. The automatically generated :doc:`api` may be interesting for you, too. It covers more details, but explains less than this tutorial. Solutions for the most common questions can be found in our :doc:`faq` collection or on the :doc:`faq` page. If you need any help, join our `mailing list <mailto:bottlepy@googlegroups.com>`_ or visit us in our `IRC channel <https://webchat.freenode.net/?channels=bottlepy>`_.
 
 .. _installation:
 
@@ -19,7 +19,7 @@ Bottle does not depend on any external libraries. You can just download `bottle.
 
     $ wget https://bottlepy.org/bottle.py
 
-This will get you the latest development snapshot that includes all the new features. If you prefer a more stable environment, you should stick with the stable releases. These are available on `PyPI <http://pypi.python.org/pypi/bottle>`_ and can be installed via :command:`pip` (recommended) or your package manager:
+This will get you the latest development snapshot that includes all the new features. If you prefer a more stable environment, you should stick with the stable releases. These are available on `PyPI <https://pypi.python.org/pypi/bottle>`_ and can be installed via :command:`pip` (recommended) or your package manager:
 
 .. code-block:: bash
 
@@ -444,7 +444,7 @@ If neither `expires` nor `max_age` is set, the cookie expires at the end of the 
 
 * Cookies are limited to 4 KB of text in most browsers.
 * Some users configure their browsers to not accept cookies at all. Most search engines ignore cookies too. Make sure that your application still works without cookies.
-* Cookies are stored at client side and are not encrypted in any way. Whatever you store in a cookie, the user can read it. Worse than that, an attacker might be able to steal a user's cookies through `XSS <http://en.wikipedia.org/wiki/HTTP_cookie#Cookie_theft_and_session_hijacking>`_ vulnerabilities on your side. Some viruses are known to read the browser cookies, too. Thus, never store confidential information in cookies.
+* Cookies are stored at client side and are not encrypted in any way. Whatever you store in a cookie, the user can read it. Worse than that, an attacker might be able to steal a user's cookies through `XSS <https://en.wikipedia.org/wiki/HTTP_cookie#Cookie_theft_and_session_hijacking>`_ vulnerabilities on your side. Some viruses are known to read the browser cookies, too. Thus, never store confidential information in cookies.
 * Cookies are easily forged by malicious clients. Do not trust cookies.
 
 .. _tutorial-signed-cookies:
@@ -787,7 +787,7 @@ Glossary
       for each URL.
 
    decorator
-      A function returning another function, usually applied as a function transformation using the ``@decorator`` syntax. See `python documentation for function definition  <http://docs.python.org/reference/compound_stmts.html#function>`_ for more about decorators.
+      A function returning another function, usually applied as a function transformation using the ``@decorator`` syntax. See `python documentation for function definition  <https://docs.python.org/reference/compound_stmts.html#function>`_ for more about decorators.
 
    environ
       A structure where information about all documents under the root is

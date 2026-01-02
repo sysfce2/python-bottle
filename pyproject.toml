@@ -46,7 +46,7 @@ docs = [
 [project.urls]
 Homepage = "https://bottlepy.org"
 Documentation = "https://bottlepy.org"
-Repository = "http://github.com/bottlepy/bottle.git"
+Repository = "https://github.com/bottlepy/bottle.git"
 Issues = "https://github.com/bottlepy/bottle/issues"
 Changelog = "https://bottlepy.org/docs/dev/changelog.html"
 

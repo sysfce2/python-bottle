@@ -1,5 +1,5 @@
-.. image:: http://bottlepy.org/docs/dev/_static/logo_nav.png
-  :target: http://bottlepy.org/
+.. image:: https://bottlepy.org/docs/dev/_static/logo_nav.png
+  :target: https://bottlepy.org/
   :alt: Bottle Logo
   :align: right
 
@@ -29,15 +29,15 @@
 Bottle: Python Web Framework
 ============================
 
-Bottle is a fast, simple and lightweight WSGI_ micro web-framework for Python_. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <http://docs.python.org/library/>`_.
+Bottle is a fast, simple and lightweight WSGI_ micro web-framework for Python_. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <https://docs.python.org/library/>`_.
 
 * **Routing:** Requests to function-call mapping with support for clean and dynamic URLs.
-* **Templates:** Fast `built-in template engine <http://bottlepy.org/docs/dev/tutorial.html#tutorial-templates>`_ and support for mako_, jinja2_ and cheetah_ templates.
+* **Templates:** Fast `built-in template engine <https://bottlepy.org/docs/dev/tutorial.html#tutorial-templates>`_ and support for mako_, jinja2_ and cheetah_ templates.
 * **Utilities:** Convenient access to form data, file uploads, cookies, headers and other HTTP features.
 * **Server:** Built-in development server and ready-to-use adapters for a wide range of WSGI_ capable HTTP server (e.g. gunicorn_, paste_ or cheroot_).
 
 
-Homepage and documentation: http://bottlepy.org
+Homepage and documentation: https://bottlepy.org
 
 
 Example: "Hello World" in a bottle

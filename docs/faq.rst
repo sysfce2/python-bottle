@@ -1,12 +1,12 @@
 .. currentmodule:: bottle
 
 .. _beaker: https://beaker.readthedocs.io/en/latest/
-.. _mod_python: http://www.modpython.org/
-.. _mod_wsgi: http://code.google.com/p/modwsgi/
+.. _mod_python: https://www.modpython.org/
+.. _mod_wsgi: https://code.google.com/p/modwsgi/
 .. _paste: https://pythonpaste.readthedocs.io/
 .. _pylons: https://pylonsproject.org/
-.. _gevent: http://www.gevent.org/
-.. _heroku: http://heroku.com
+.. _gevent: https://www.gevent.org/
+.. _heroku: https://heroku.com
 .. _django: https://www.djangoproject.com/
 .. _werkzeug: https://werkzeug.palletsprojects.com/en/3.0.x/
 
@@ -213,7 +213,7 @@ or add a ``before_request`` hook to strip the trailing slashes::
 
 .. rubric:: Footnotes
 
-.. [1] Because they are. See <http://www.ietf.org/rfc/rfc3986.txt>
+.. [1] Because they are. See <https://www.ietf.org/rfc/rfc3986.txt>
 
 
 Keep-alive requests
@@ -300,11 +300,11 @@ Heroku_, a popular cloud application platform now provides support
 for running Python applications on their infrastructure. 
 
 This recipe is based upon the `Heroku Quickstart 
-<http://devcenter.heroku.com/articles/quickstart>`_, 
+<https://devcenter.heroku.com/articles/quickstart>`_, 
 with Bottle specific code replacing the 
-`Write Your App <http://devcenter.heroku.com/articles/python#write_your_app>`_ 
+`Write Your App <https://devcenter.heroku.com/articles/python#write_your_app>`_ 
 section of the `Getting Started with Python on Heroku/Cedar 
-<http://devcenter.heroku.com/articles/python>`_ guide::
+<https://devcenter.heroku.com/articles/python>`_ guide::
 
     import os
     from bottle import route, run

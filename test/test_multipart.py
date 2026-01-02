@@ -262,7 +262,7 @@ class TestBrokenMultipart(BaseMultipartTest):
 
 ''' The files used by the following test were taken from the werkzeug library
     test suite and are therefore partly copyrighted by the Werkzeug Team
-    under BSD licence. See http://werkzeug.pocoo.org/ '''
+    under BSD licence. See https://werkzeug.pocoo.org/ '''
 
 b64d=base64.b64decode
 browser_test_cases = {}

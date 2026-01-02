@@ -17,7 +17,7 @@ We have a growing list of :doc:`/plugins/list` and most plugins are designed to 
 Plugin Basics
 =============
 
-Bottles Plugin system builds on the concept of `decorators <http://docs.python.org/glossary.html#term-decorator>`_. To put it briefly, a plugin is a decorator applied to all route callback in an application. Plugins can do more than just decorating route callbacks, but it is still a good starting point to understand the concept. Lets have a look at a practical example::
+Bottles Plugin system builds on the concept of `decorators <https://docs.python.org/glossary.html#term-decorator>`_. To put it briefly, a plugin is a decorator applied to all route callback in an application. Plugins can do more than just decorating route callbacks, but it is still a good starting point to understand the concept. Lets have a look at a practical example::
 
     from bottle import response
 
